@@ -5,20 +5,18 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { WithNotes } from '@storybook/addon-notes';
 
-import UserCard from './index';
+import PlayerMusic from './index';
 
 // ====
 
-storiesOf('UserCard', module)
-    .add('no props', () => (
-        <UserCard />
-    ))
+storiesOf('PlayerMusic', module)
+    .add('no props', () => <PlayerMusic />)
     .add('with toggleClick', () => {
         const toggleNotes = 'This toggleClick function, make the request to the API.';
 
         return (
             <WithNotes notes={toggleNotes}>
-                <UserCard toggleClick={action('It works!')} />
+                <PlayerMusic toggleClick={action('It works!')} />
             </WithNotes>
         )
     })
