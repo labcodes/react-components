@@ -10,8 +10,8 @@ import UserCard from './index';
 // ====
 
 const userObj = {
-    userName: 'Nicolle Cysneiros',
-    photoUrl: 'https://avatars3.githubusercontent.com/u/3246075?s=460&v=4',
+    userName: 'Thulio Philipe',
+    photoUrl: 'https://avatars1.githubusercontent.com/u/2343288?s=460&v=4',
     amount: 'R$ 2.400,10'
 };
 
