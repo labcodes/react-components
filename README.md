@@ -1,79 +1,61 @@
-# Storybook React Component
+# React Components
 
-A collection with some React components, ready to use.
+A collection with some React components, ready to use!
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-### Prerequisites
-
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Installing
 
-A step by step series of examples that tell you have to get a development env running
+To install the packages:
 
-Say what the step will be
-
-```
-Give the example
+```sh
+$ npm install
 ```
 
-And repeat
+### Running
 
-```
-until finished
-```
+#### development
 
-End with an example of getting some data out of the system or using it for a little demo
+To run the project in **development** mode:
 
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
+```sh
+$ npm run dev
 ```
 
-### And coding style tests
+#### build
 
-Explain what these tests test and why
+To build the project in a separated folder:
 
+```sh
+$ npm run build
 ```
-Give an example
+
+#### demo
+
+To see a live demo:
+
+```sh
+$ npm run build
 ```
 
-## Deployment
-
-Add additional notes about how to deploy this on a live system
+```sh
+$ npm run live
+```
 
 ## Built With
 
-* [Storybook]() - The web framework used
-* [Babel]() - Dependency Management
-* [React]() - Used to generate RSS Feeds
-* [Jest]() - Used to generate RSS Feeds
-* [HTTP-Server]() - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+* [Storybook](https://storybook.js.org/) - Used as a UI development environment
+* [Babel](https://babeljs.io/) - Used to compile the code
+* [React](https://reactjs.org/) - Used to build the components
+* [Jest](https://facebook.github.io/jest/) - Used to test
+* [HTTP-Server](https://www.npmjs.com/package/http-server) - Used to start a HTTP server
 
 ## Contributors
 
-See the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See the list of [contributors](https://github.com/thulioph/react-components/contributors) who participated in this project.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-> https://monosnap.com/file/VjFQ13SEOq5h6NIE0RhQEp2lh3OGyI
+This project is licensed under the MIT License - see the [mit-license.org](https://thulioph.mit-license.org/) for details.
