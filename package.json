@@ -5,9 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "dev": "start-storybook -p 9001 -c .storybook",
+    "dev": "npm-run-all --parallel watch-sass storybook",
+    "storybook": "start-storybook -p 9001 -c .storybook",
     "build": "build-storybook -c .storybook -o .components",
-    "live": "./node_modules/.bin/http-server .components -o"
+    "live": "./node_modules/.bin/http-server .components -o",
+    "build-sass": "node-sass-chokidar src/ -o src/",
+    "watch-sass": "npm run build-sass -- --watch --recursive"
   },
   "author": "Thulio Philipe <thulioph@gmail.com>",
   "license": "MIT",
