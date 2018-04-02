@@ -1,3 +1,11 @@
+# OS Files
 .DS_Store
+
+# Modules
 node_modules/
+
+# Build folder
 .components/
+
+# CSS Files
+src/**/*.css
