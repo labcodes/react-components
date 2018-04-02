@@ -13,12 +13,12 @@ const UserCard = ({ userName, photoUrl, amount, status, handleClick }) => (
 
         <aside style={styles.userInfo}>
             <div style={styles.box.info}>
-                <h1 style={styles.title}>{userName}</h1>
-                <h3 style={styles.subtitle}>{amount}</h3>
+                <h1 style={styles.box.title}>{userName}</h1>
+                <h3 style={styles.box.subtitle}>{amount}</h3>
             </div>
 
             <div style={styles.box.status}>
-                <span style={styles.status.type[status]}>{status}</span>
+                <span style={styles.box.status.type[status]}>{status}</span>
             </div>
         </aside>
     </article>
