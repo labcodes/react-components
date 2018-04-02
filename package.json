@@ -5,12 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "dev": "npm-run-all --parallel watch-sass storybook",
-    "storybook": "start-storybook -p 9001 -c .storybook",
-    "build": "build-storybook -c .storybook -o .components",
-    "live": "./node_modules/.bin/http-server .components -o",
-    "build-sass": "node-sass-chokidar src/ -o src/",
-    "watch-sass": "npm run build-sass -- --watch --recursive"
+    "dev": "npm-run-all --parallel sass:watch storybook:dev",
+    "build": "npm-run-all --parallel sass:build storybook:build",
+    "storybook:dev": "start-storybook -p 9001 -c .storybook",
+    "storybook:build": "build-storybook -c .storybook -o .components",
+    "sass:build": "node-sass-chokidar src/ -o src/",
+    "sass:watch": "npm run sass:build -- --watch --recursive",
+    "live": "./node_modules/.bin/http-server .components -o"
   },
   "author": "Thulio Philipe <thulioph@gmail.com>",
   "license": "MIT",
