@@ -13,7 +13,7 @@ const Header = ({ userPhoto, userName, usersList, handleOnChange, handleClick}) 
 
     if (hasUserList && handleOnChange) {
         selectComponent = (
-            <select className='header-select' onChange={(evt) => handleOnChange(evt)}>
+            <select className='header-select' onChange={(evt) => handleOnChange(evt.target.value)}>
                 {usersList.map(({ id, name }) => (
                     <option key={id} value={id}>
                         {name}
