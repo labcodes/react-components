@@ -51,7 +51,7 @@ storiesOf('UserCard', module)
                 photoUrl={userObj.photoUrl}
                 amount={userObj.amount}
                 status='pending'
-                handleClick={action('It works!')}
+                handleClick={(user) => action('It works!')(user)}
             />
         </WithNotes>
     ))
