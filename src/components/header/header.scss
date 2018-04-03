@@ -1,0 +1,74 @@
+// Variables
+
+$bg-image: 'https://refactor-apollo-queries.financeiro.labcod.es/static/media/logout-icon.754628c1.svg';
+
+// ====
+
+.header-primary {
+    min-height: 60px;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #DDD;
+}
+
+.header-box {
+    flex: 1 1 30%;
+
+    &.first {
+        text-align: left;
+    }
+    
+    &.second {
+        text-align: center;
+    }
+    
+    &.third {
+        text-align: right;
+    }
+}
+
+.logout-button {
+    overflow: hidden;
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    display: inline-block;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: transparent;
+
+    background-image: url($bg-image);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.header-select {
+    font-size: 14px;
+    font-weight: 500;
+    color: #39393A;
+    position: relative;
+    min-width: 180px;
+    margin: 0 auto;
+    padding: 12px 15px;
+    background: transparent;
+    outline: none;
+    border: none;
+    appearance: none;
+    cursor: pointer;
+    transition: all .3s ease-out;
+}
+
+.header-user-photo {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    display: inline-block;
+    overflow: hidden;
+
+    img {
+        max-width: 100%;
+    }
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import styles from './styles';
+import './header.scss'
 
 // ====
 
@@ -13,7 +13,7 @@ const Header = ({ userPhoto, userName, usersList, handleOnChange, handleClick}) 
 
     if (hasUserList && handleOnChange) {
         selectComponent = (
-            <select style={styles.select} onChange={(evt) => handleOnChange(evt)}>
+            <select className='header-select' onChange={(evt) => handleOnChange(evt)}>
                 {usersList.map(({ id, name }) => (
                     <option key={id} value={id}>
                         {name}
@@ -25,25 +25,25 @@ const Header = ({ userPhoto, userName, usersList, handleOnChange, handleClick}) 
 
     if (handleClick) {
         logoutButton = (
-            <button style={styles.logout} onClick={() => handleClick()}>
+            <button className='logout-button' onClick={() => handleClick()}>
                 logout
             </button>
         );
     }
 
     return (
-        <header style={styles.header}>
-            <div style={styles.box.first}>
-                <figure style={styles.userPhoto}>
-                    <img style={styles.userPhoto.img} src={userPhoto} alt={userName} />
+        <header className='header-primary'>
+            <div className='header-box first'>
+                <figure className='header-user-photo'>
+                    <img src={userPhoto} alt={userName} />
                 </figure>
             </div>
 
-            <div style={styles.box.second}>
+            <div className='header-box second'>
                 {selectComponent}
             </div>
 
-            <div style={styles.box.third}>
+            <div className='header-box third'>
                 {logoutButton}
             </div>
         </header>
