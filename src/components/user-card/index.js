@@ -1,24 +1,24 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import styles from './styles';
+import './user-card.scss';
 
 // ====
 
 const UserCard = ({ userName, photoUrl, amount, status, handleClick }) => (
-    <article style={styles.cardWrapper} onClick={() => handleClick()}>
-        <figure style={styles.cardImage}>
-            <img src={photoUrl} alt={userName} style={styles.cardImage.img} />
+    <article className='card-wrapper' onClick={() => handleClick(userName)}>
+        <figure className='card-image'>
+            <img src={photoUrl} alt={userName} />
         </figure>
 
-        <aside style={styles.userInfo}>
-            <div style={styles.box.info}>
-                <h1 style={styles.box.title}>{userName}</h1>
-                <h3 style={styles.box.subtitle}>{amount}</h3>
+        <aside className='card-user-info'>
+            <div className='card-box info'>
+                <h1 className='card-box-title'>{userName}</h1>
+                <h3 className='card-box-subtitle'>{amount}</h3>
             </div>
 
-            <div style={styles.box.status}>
-                <span style={styles.box.status.type[status]}>{status}</span>
+            <div className='card-box status'>
+                <span className={`card-status-type ${status}`}>{status}</span>
             </div>
         </aside>
     </article>
@@ -41,7 +41,7 @@ UserCard.defaultProps = {
     photoUrl: '',
     amount: '',
     status: '',
-    handleClick: null
+    handleClick: () => {}
 };
 
 // ====
