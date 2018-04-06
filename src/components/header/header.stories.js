@@ -31,12 +31,14 @@ storiesOf('Header', module)
         />
     ))
     .add('with a select component', () => (
-        <Header 
-            select={HeaderObj.select}
-            selectOptions={HeaderObj.selectOptions}
-            selectMainUser={HeaderObj.userName}
-            handleClickUser={(user) => action('User')(user)}
-        />
+        <WithNotes notes={'It is using the select component with options, main user and handleClick as properties.'}>
+            <Header 
+                select={HeaderObj.select}
+                selectOptions={HeaderObj.selectOptions}
+                selectMainUser={HeaderObj.userName}
+                handleClickUser={(user) => action('User')(user)}
+            />
+        </WithNotes>
     ))
     .add('with logout button', () => (
         <Header handleLogoutClick={action('Logout')} />
