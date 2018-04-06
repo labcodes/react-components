@@ -1,31 +1,27 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import './header.scss'
+import './header.scss';
 
 // ====
 
-const Header = ({ userPhoto, userName, usersList, handleOnChange, handleClick}) => {
-    let selectComponent = null;
+const Header = ({ userPhoto, userName, handleLogoutClick, select: Component, selectOptions, selectMainUser, handleClickUser }) => {
     let logoutButton = null;
-    
-    const hasUserList = usersList && usersList.length > 0;
+    let selectComponent = null;
 
-    if (hasUserList && handleOnChange) {
+    if (Component) {
         selectComponent = (
-            <select className='header-select' onChange={(evt) => handleOnChange(evt.target.value)}>
-                {usersList.map(({ id, name }) => (
-                    <option key={id} value={id}>
-                        {name}
-                    </option>
-                ))}
-            </select>
+            <Component 
+                usersList={selectOptions}
+                mainUser={selectMainUser}
+                handleClickUser={handleClickUser}
+            />
         );
     }
 
-    if (handleClick) {
+    if (handleLogoutClick) {
         logoutButton = (
-            <button className='logout-button' onClick={() => handleClick()}>
+            <button className='logout-button' onClick={() => handleLogoutClick()}>
                 logout
             </button>
         );
@@ -55,14 +51,16 @@ const Header = ({ userPhoto, userName, usersList, handleOnChange, handleClick}) 
 Header.propTypes = {
     userPhoto: PropTypes.string.isRequired,
     userName: PropTypes.string.isRequired,
-    usersList: PropTypes.arrayOf(
+    selectMainUser: PropTypes.string.isRequired,
+    selectOptions: PropTypes.arrayOf(
         PropTypes.shape({
             id: PropTypes.number,
             name: PropTypes.string
         })
     ).isRequired,
-    handleClick: PropTypes.func,
-    handleOnChange: PropTypes.func
+    handleLogoutClick: PropTypes.func,
+    handleClickUser: PropTypes.func,
+    select: PropTypes.func
 };
 
 // ====
@@ -70,9 +68,11 @@ Header.propTypes = {
 Header.defaultProps = {
     userPhoto: '',
     userName: '',
-    usersList: [],
-    handleClick: null,
-    handleOnChange: null
+    selectMainUser: 'string',
+    selectOptions: [],
+    handleLogoutClick: null,
+    handleClickUser: null,
+    select: null
 };
 
 // ====
