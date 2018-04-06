@@ -36,7 +36,9 @@ class Select extends React.Component {
             mainUser: newUser
         });
 
-        handleClickUser(newUser);
+        if (handleClickUser) {
+            handleClickUser(newUser);
+        }
     }
 
     render() {
