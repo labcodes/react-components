@@ -10,11 +10,11 @@ import Select from './index';
 // ====
 
 const SelectObj = {
-    mainUser: 'Thulio Philipe',
+    mainUser: 'Chuck Norris',
     usersList: [
-        { id: 1, user: 'User 01' },
-        { id: 2, user: 'User 02' },
-        { id: 3, user: 'User 03' },
+        { id: 1, name: 'User 01' },
+        { id: 2, name: 'User 02' },
+        { id: 3, name: 'User 03' },
     ]
 };
 
@@ -32,6 +32,6 @@ storiesOf('Select', module)
         <Select 
             mainUser={SelectObj.mainUser}
             usersList={SelectObj.usersList}
-            handleClickUser={(obj) => action('User Clicked:')(obj)}
+            handleClickUser={(user) => action('User')(user)}
         />
     ))
