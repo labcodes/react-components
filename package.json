@@ -11,7 +11,8 @@
     "storybook:build": "build-storybook -c .storybook -o .components",
     "sass:build": "node-sass-chokidar src/ -o src/",
     "sass:watch": "npm run sass:build -- --watch --recursive",
-    "live": "./node_modules/.bin/http-server .components -o"
+    "live": "./node_modules/.bin/http-server .components -o",
+    "deploy": "storybook-to-ghpages"
   },
   "author": "Thulio Philipe <thulioph@gmail.com>",
   "license": "MIT",
@@ -22,6 +23,7 @@
     "@storybook/addon-storyshots": "^3.3.15",
     "@storybook/addons": "^3.3.15",
     "@storybook/react": "^3.3.15",
+    "@storybook/storybook-deployer": "^2.3.0",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-preset-env": "^1.6.1",
