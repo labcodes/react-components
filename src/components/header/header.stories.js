@@ -6,16 +6,18 @@ import { action } from '@storybook/addon-actions';
 import { WithNotes } from '@storybook/addon-notes';
 
 import Header from './index';
+import SelectComponent from '../select';
 
 // ====
 
 const HeaderObj = {
-    userName: 'Thulio Philipe',
-    userPhoto: 'https://avatars1.githubusercontent.com/u/2343288?s=460&v=4',
-    usersList: [
+    userName: 'Chuck Norris',
+    userPhoto: 'http://i.pravatar.cc/300',
+    selectOptions: [
         { id: 1, name: 'User 01' },
         { id: 2, name: 'User 02' },
-    ]
+    ],
+    select: SelectComponent,
 };
 
 storiesOf('Header', module)
@@ -28,21 +30,25 @@ storiesOf('Header', module)
             userName={HeaderObj.userName}
         />
     ))
-    .add('with usersList', () => (
+    .add('with a select component', () => (
         <Header 
-            usersList={HeaderObj.usersList}
-            handleOnChange={(evt) => action('On change!')(evt)}
+            select={HeaderObj.select}
+            selectOptions={HeaderObj.selectOptions}
+            selectMainUser={HeaderObj.userName}
+            handleClickUser={(user) => action('User')(user)}
         />
     ))
     .add('with logout button', () => (
-        <Header handleClick={action('Logout')} />
+        <Header handleLogoutClick={action('Logout')} />
     ))
     .add('complete version', () => (
         <Header 
-            userPhoto='http://i.pravatar.cc/300'
-            userName='Chuck Norris'
-            usersList={HeaderObj.usersList}
-            handleOnChange={(evt) => action('On change!')(evt)}
-            handleClick={action('Logout')}
+            userName={HeaderObj.userName}
+            userPhoto={HeaderObj.userPhoto}
+            select={HeaderObj.select}
+            selectOptions={HeaderObj.selectOptions}
+            selectMainUser={HeaderObj.userName}
+            handleClickUser={(user) => action('User')(user)}
+            handleLogoutClick={action('Logout')}
         />
     ))
