@@ -32,6 +32,14 @@ To build the project in a separated folder:
 $ npm run build
 ```
 
+#### build
+
+To deploy the project to your github pages:
+
+```sh
+$ npm run deploy
+```
+
 #### demo
 
 To see a live demo:
