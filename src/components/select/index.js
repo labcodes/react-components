@@ -48,8 +48,8 @@ class Select extends React.Component {
 
         if (hasUserList) {
             listComponent = usersList.map((el) => (
-                <li key={el.id} className='select-list-item' onClick={() => this.changeMainUser(el.user)}>
-                    {el.user}
+                <li key={el.id} className='select-list-item' onClick={() => this.changeMainUser(el.name)}>
+                    {el.name}
                 </li>)
             );
         }
@@ -75,7 +75,7 @@ Select.propTypes = {
     usersList: PropTypes.arrayOf(
         PropTypes.shape({
             id: PropTypes.number,
-            user: PropTypes.string
+            name: PropTypes.string
         })
     ).isRequired,
     handleClickUser: PropTypes.func
