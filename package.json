@@ -1,10 +1,9 @@
 {
   "name": "react-ui-components",
   "version": "1.0.0",
-  "description": "",
+  "description": "A collection of React components, ready to use!",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
     "dev": "npm-run-all --parallel sass:watch storybook:dev",
     "build": "npm-run-all --parallel sass:build storybook:build",
     "storybook:dev": "start-storybook -p 9001 -c .storybook",
@@ -14,7 +13,7 @@
     "live": "./node_modules/.bin/http-server .components -o",
     "deploy": "storybook-to-ghpages"
   },
-  "author": "Thulio Philipe <thulioph@gmail.com>",
+  "author": "Thulio Philipe <thulio@labcodes.com.br>",
   "license": "MIT",
   "devDependencies": {
     "@storybook/addon-actions": "^3.3.15",
@@ -32,7 +31,6 @@
     "babel-preset-react": "^6.24.1",
     "css-loader": "^0.28.11",
     "http-server": "^0.11.1",
-    "jest": "^22.4.3",
     "node-sass-chokidar": "^1.2.2",
     "npm-run-all": "^4.1.2",
     "react-test-renderer": "^16.3.0",
@@ -42,13 +40,5 @@
   "dependencies": {
     "react": "^16.3.0",
     "react-dom": "^16.3.0"
-  },
-  "jest": {
-    "verbose": true,
-    "testEnvironment": "node",
-    "moduleDirectories": [
-      "node_modules",
-      "src"
-    ]
   }
 }
