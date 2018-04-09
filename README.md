@@ -1,6 +1,6 @@
 # React Components
 
-A collection with some React components, ready to use!
+A collection of React components, ready to use!
 
 ## Getting Started
 
@@ -62,8 +62,8 @@ $ npm run live
 
 ## Contributors
 
-See the list of [contributors](https://github.com/thulioph/react-components/contributors) who participated in this project.
+See the list of [contributors](https://github.com/labcodes/react-components/contributors) who participated in this project.
 
 ## License
 
-This project is licensed under the MIT License - see the [mit-license.org](https://thulioph.mit-license.org/) for details.
+This project is licensed under the MIT License - see the [mit-license.org](https://labcodes.mit-license.org/) for details.
