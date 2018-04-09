@@ -10,8 +10,8 @@ import UserCard from './index';
 // ====
 
 const userObj = {
-    userName: 'Thulio Philipe',
-    photoUrl: 'https://avatars1.githubusercontent.com/u/2343288?s=460&v=4',
+    userName: 'Chuck Norris',
+    photoUrl: 'http://i.pravatar.cc/300',
     amount: 'R$ 2.400,10'
 };
 
