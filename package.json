@@ -8,12 +8,14 @@
     "build": "npm-run-all --parallel sass:build storybook:build",
     "storybook:dev": "start-storybook -p 9001 -c .storybook",
     "storybook:build": "build-storybook -c .storybook -o .components",
+    "storybook:gh": "storybook-to-ghpages",
     "sass:build": "node-sass-chokidar src/ -o src/",
     "sass:watch": "npm run sass:build -- --watch --recursive",
-    "live": "./node_modules/.bin/http-server .components -o",
-    "deploy": "storybook-to-ghpages",
     "test": "./node_modules/.bin/jest",
-    "test:watch": "./node_modules/.bin/jest --watch"
+    "test:watch": "./node_modules/.bin/jest --watch",
+    "live": "./node_modules/.bin/http-server .components -o",
+    "demo": "npm run build && npm run live",
+    "deploy": "npm run build && npm run storybook:gh"
   },
   "author": "Thulio Philipe <thulio@labcodes.com.br>",
   "license": "MIT",
