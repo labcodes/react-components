@@ -1,0 +1,345 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots UserCard complete version 1`] = `
+<article
+  className="card-wrapper"
+  onClick={[Function]}
+>
+  <figure
+    className="card-image"
+  >
+    <img
+      alt="Chuck Norris"
+      src="http://i.pravatar.cc/300"
+    />
+  </figure>
+  <aside
+    className="card-user-info"
+  >
+    <div
+      className="card-box info"
+    >
+      <h1
+        className="card-box-title"
+      >
+        Chuck Norris
+      </h1>
+      <h3
+        className="card-box-subtitle"
+      >
+        R$ 2.400,10
+      </h3>
+    </div>
+    <div
+      className="card-box status"
+    >
+      <span
+        className="card-status-type pending"
+      >
+        pending
+      </span>
+    </div>
+  </aside>
+</article>
+`;
+
+exports[`Storyshots UserCard complete version with handleClick 1`] = `
+<article
+  className="card-wrapper"
+  onClick={[Function]}
+>
+  <figure
+    className="card-image"
+  >
+    <img
+      alt="Chuck Norris"
+      src="http://i.pravatar.cc/300"
+    />
+  </figure>
+  <aside
+    className="card-user-info"
+  >
+    <div
+      className="card-box info"
+    >
+      <h1
+        className="card-box-title"
+      >
+        Chuck Norris
+      </h1>
+      <h3
+        className="card-box-subtitle"
+      >
+        R$ 2.400,10
+      </h3>
+    </div>
+    <div
+      className="card-box status"
+    >
+      <span
+        className="card-status-type pending"
+      >
+        pending
+      </span>
+    </div>
+  </aside>
+</article>
+`;
+
+exports[`Storyshots UserCard empty 1`] = `
+<article
+  className="card-wrapper"
+  onClick={[Function]}
+>
+  <figure
+    className="card-image"
+  >
+    <img
+      alt=""
+      src=""
+    />
+  </figure>
+  <aside
+    className="card-user-info"
+  >
+    <div
+      className="card-box info"
+    >
+      <h1
+        className="card-box-title"
+      >
+        
+      </h1>
+      <h3
+        className="card-box-subtitle"
+      >
+        
+      </h3>
+    </div>
+    <div
+      className="card-box status"
+    >
+      <span
+        className="card-status-type "
+      >
+        
+      </span>
+    </div>
+  </aside>
+</article>
+`;
+
+exports[`Storyshots UserCard with amount 1`] = `
+<article
+  className="card-wrapper"
+  onClick={[Function]}
+>
+  <figure
+    className="card-image"
+  >
+    <img
+      alt=""
+      src=""
+    />
+  </figure>
+  <aside
+    className="card-user-info"
+  >
+    <div
+      className="card-box info"
+    >
+      <h1
+        className="card-box-title"
+      >
+        
+      </h1>
+      <h3
+        className="card-box-subtitle"
+      >
+        R$ 2.400,10
+      </h3>
+    </div>
+    <div
+      className="card-box status"
+    >
+      <span
+        className="card-status-type "
+      >
+        
+      </span>
+    </div>
+  </aside>
+</article>
+`;
+
+exports[`Storyshots UserCard with photoUrl 1`] = `
+<article
+  className="card-wrapper"
+  onClick={[Function]}
+>
+  <figure
+    className="card-image"
+  >
+    <img
+      alt=""
+      src="http://i.pravatar.cc/300"
+    />
+  </figure>
+  <aside
+    className="card-user-info"
+  >
+    <div
+      className="card-box info"
+    >
+      <h1
+        className="card-box-title"
+      >
+        
+      </h1>
+      <h3
+        className="card-box-subtitle"
+      >
+        
+      </h3>
+    </div>
+    <div
+      className="card-box status"
+    >
+      <span
+        className="card-status-type "
+      >
+        
+      </span>
+    </div>
+  </aside>
+</article>
+`;
+
+exports[`Storyshots UserCard with status pending 1`] = `
+<article
+  className="card-wrapper"
+  onClick={[Function]}
+>
+  <figure
+    className="card-image"
+  >
+    <img
+      alt=""
+      src=""
+    />
+  </figure>
+  <aside
+    className="card-user-info"
+  >
+    <div
+      className="card-box info"
+    >
+      <h1
+        className="card-box-title"
+      >
+        
+      </h1>
+      <h3
+        className="card-box-subtitle"
+      >
+        
+      </h3>
+    </div>
+    <div
+      className="card-box status"
+    >
+      <span
+        className="card-status-type pending"
+      >
+        pending
+      </span>
+    </div>
+  </aside>
+</article>
+`;
+
+exports[`Storyshots UserCard with status success 1`] = `
+<article
+  className="card-wrapper"
+  onClick={[Function]}
+>
+  <figure
+    className="card-image"
+  >
+    <img
+      alt=""
+      src=""
+    />
+  </figure>
+  <aside
+    className="card-user-info"
+  >
+    <div
+      className="card-box info"
+    >
+      <h1
+        className="card-box-title"
+      >
+        
+      </h1>
+      <h3
+        className="card-box-subtitle"
+      >
+        
+      </h3>
+    </div>
+    <div
+      className="card-box status"
+    >
+      <span
+        className="card-status-type success"
+      >
+        success
+      </span>
+    </div>
+  </aside>
+</article>
+`;
+
+exports[`Storyshots UserCard with username 1`] = `
+<article
+  className="card-wrapper"
+  onClick={[Function]}
+>
+  <figure
+    className="card-image"
+  >
+    <img
+      alt="Chuck Norris"
+      src=""
+    />
+  </figure>
+  <aside
+    className="card-user-info"
+  >
+    <div
+      className="card-box info"
+    >
+      <h1
+        className="card-box-title"
+      >
+        Chuck Norris
+      </h1>
+      <h3
+        className="card-box-subtitle"
+      >
+        
+      </h3>
+    </div>
+    <div
+      className="card-box status"
+    >
+      <span
+        className="card-status-type "
+      >
+        
+      </span>
+    </div>
+  </aside>
+</article>
+`;
