@@ -25,7 +25,7 @@ const EventObj = {
     period: '13/03/2018'
 };
 
-storiesOf('Event Display', module)
+storiesOf('EventDisplay', module)
     .add('empty', () => (
         <EventDisplay />
     ))
