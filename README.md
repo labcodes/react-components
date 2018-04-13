@@ -26,18 +26,10 @@ $ npm run dev
 
 #### build
 
-To build the project in a separated folder:
+To build the project in **.components** folder:
 
 ```sh
 $ npm run build
-```
-
-#### build
-
-To deploy the project to your github pages:
-
-```sh
-$ npm run deploy
 ```
 
 #### demo
@@ -45,11 +37,15 @@ $ npm run deploy
 To see a live demo:
 
 ```sh
-$ npm run build
+$ npm run demo
 ```
 
+#### deploy
+
+To deploy the project to github pages:
+
 ```sh
-$ npm run live
+$ npm run deploy
 ```
 
 ## Built With
