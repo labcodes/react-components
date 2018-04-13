@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Select complete version 1`] = `
+<div
+  className="select-wrapper"
+  onClick={[Function]}
+>
+  <span
+    className="select-main-user"
+  >
+    Chuck Norris
+  </span>
+  <ul
+    className="select-list"
+  >
+    <li
+      className="select-list-item"
+      onClick={[Function]}
+    >
+      User 01
+    </li>
+    <li
+      className="select-list-item"
+      onClick={[Function]}
+    >
+      User 02
+    </li>
+    <li
+      className="select-list-item"
+      onClick={[Function]}
+    >
+      User 03
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots Select empty 1`] = `
+<div
+  className="select-wrapper"
+  onClick={[Function]}
+>
+  <span
+    className="select-main-user"
+  >
+    
+  </span>
+  <ul
+    className="select-list"
+  />
+</div>
+`;
+
+exports[`Storyshots Select with mainUser 1`] = `
+<div
+  className="select-wrapper"
+  onClick={[Function]}
+>
+  <span
+    className="select-main-user"
+  >
+    Chuck Norris
+  </span>
+  <ul
+    className="select-list"
+  />
+</div>
+`;
+
+exports[`Storyshots Select with usersList 1`] = `
+<div
+  className="select-wrapper"
+  onClick={[Function]}
+>
+  <span
+    className="select-main-user"
+  >
+    
+  </span>
+  <ul
+    className="select-list"
+  >
+    <li
+      className="select-list-item"
+      onClick={[Function]}
+    >
+      User 01
+    </li>
+    <li
+      className="select-list-item"
+      onClick={[Function]}
+    >
+      User 02
+    </li>
+    <li
+      className="select-list-item"
+      onClick={[Function]}
+    >
+      User 03
+    </li>
+  </ul>
+</div>
+`;
