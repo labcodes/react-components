@@ -15,8 +15,8 @@ const EventDisplay = ({title, type, users, period}) => {
                 </h3>
                 
                 <ul className='event-display-list'>
-                    {users.map((el => (
-                        <li className='event-display-item'>
+                    {users.map(((el, idx) => (
+                        <li className='event-display-item' key={idx}>
                             <figure>
                                 <img src={el.img} alt={el.name} />
                             </figure>
@@ -39,10 +39,7 @@ const EventDisplay = ({title, type, users, period}) => {
 EventDisplay.propTypes = {
     title: PropTypes.string.isRequired,
     type: PropTypes.string.isRequired,
-    users: PropTypes.shape({
-        img: PropTypes.string,
-        name: PropTypes.string,
-    }).isRequired,
+    users: PropTypes.array.isRequired,
     period: PropTypes.string.isRequired,
 };
 

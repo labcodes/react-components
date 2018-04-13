@@ -1,0 +1,194 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Header complete version 1`] = `
+<header
+  className="header-primary"
+>
+  <div
+    className="header-box first"
+  >
+    <figure
+      className="header-user-photo"
+    >
+      <img
+        alt="Chuck Norris"
+        src="http://i.pravatar.cc/300"
+      />
+    </figure>
+  </div>
+  <div
+    className="header-box second"
+  >
+    <div
+      className="select-wrapper"
+      onClick={[Function]}
+    >
+      <span
+        className="select-main-user"
+      >
+        Chuck Norris
+      </span>
+      <ul
+        className="select-list"
+      >
+        <li
+          className="select-list-item"
+          onClick={[Function]}
+        >
+          User 01
+        </li>
+        <li
+          className="select-list-item"
+          onClick={[Function]}
+        >
+          User 02
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    className="header-box third"
+  >
+    <button
+      className="logout-button"
+      onClick={[Function]}
+    >
+      logout
+    </button>
+  </div>
+</header>
+`;
+
+exports[`Storyshots Header empty 1`] = `
+<header
+  className="header-primary"
+>
+  <div
+    className="header-box first"
+  >
+    <figure
+      className="header-user-photo"
+    >
+      <img
+        alt=""
+        src=""
+      />
+    </figure>
+  </div>
+  <div
+    className="header-box second"
+  />
+  <div
+    className="header-box third"
+  />
+</header>
+`;
+
+exports[`Storyshots Header with a select component 1`] = `
+<header
+  className="header-primary"
+>
+  <div
+    className="header-box first"
+  >
+    <figure
+      className="header-user-photo"
+    >
+      <img
+        alt=""
+        src=""
+      />
+    </figure>
+  </div>
+  <div
+    className="header-box second"
+  >
+    <div
+      className="select-wrapper"
+      onClick={[Function]}
+    >
+      <span
+        className="select-main-user"
+      >
+        Chuck Norris
+      </span>
+      <ul
+        className="select-list"
+      >
+        <li
+          className="select-list-item"
+          onClick={[Function]}
+        >
+          User 01
+        </li>
+        <li
+          className="select-list-item"
+          onClick={[Function]}
+        >
+          User 02
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    className="header-box third"
+  />
+</header>
+`;
+
+exports[`Storyshots Header with logout button 1`] = `
+<header
+  className="header-primary"
+>
+  <div
+    className="header-box first"
+  >
+    <figure
+      className="header-user-photo"
+    >
+      <img
+        alt=""
+        src=""
+      />
+    </figure>
+  </div>
+  <div
+    className="header-box second"
+  />
+  <div
+    className="header-box third"
+  >
+    <button
+      className="logout-button"
+      onClick={[Function]}
+    >
+      logout
+    </button>
+  </div>
+</header>
+`;
+
+exports[`Storyshots Header with userPhoto 1`] = `
+<header
+  className="header-primary"
+>
+  <div
+    className="header-box first"
+  >
+    <figure
+      className="header-user-photo"
+    >
+      <img
+        alt="Chuck Norris"
+        src="http://i.pravatar.cc/300"
+      />
+    </figure>
+  </div>
+  <div
+    className="header-box second"
+  />
+  <div
+    className="header-box third"
+  />
+</header>
+`;
