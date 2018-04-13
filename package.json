@@ -11,7 +11,9 @@
     "sass:build": "node-sass-chokidar src/ -o src/",
     "sass:watch": "npm run sass:build -- --watch --recursive",
     "live": "./node_modules/.bin/http-server .components -o",
-    "deploy": "storybook-to-ghpages"
+    "deploy": "storybook-to-ghpages",
+    "test": "./node_modules/.bin/jest",
+    "test:watch": "./node_modules/.bin/jest --watch"
   },
   "author": "Thulio Philipe <thulio@labcodes.com.br>",
   "license": "MIT",
@@ -31,6 +33,7 @@
     "babel-preset-react": "^6.24.1",
     "css-loader": "^0.28.11",
     "http-server": "^0.11.1",
+    "jest": "^22.4.3",
     "node-sass-chokidar": "^1.2.2",
     "npm-run-all": "^4.1.2",
     "react-test-renderer": "^16.3.0",
