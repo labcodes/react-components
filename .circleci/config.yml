@@ -28,31 +28,8 @@ jobs:
             - run:
                 name: Running the tests
                 command: npm run test
-    deploy-job:
-        <<: *startContainer
-        steps:
-            - checkout
-            - restore_cache:
-                keys:
-                    - app-dependencies-v2-{{ checksum "package.json" }}
-                    - app-dependencies-v1-{{ checksum "package.json" }}
-            - run:
-                <<: *npmInstall
-            - save_cache:
-                key: app-dependencies-v2-{{ checksum "package.json" }}
-                paths:
-                    - node_modules
-            - run:
-                name: Preparing the application to deploy
-                command: npm run deploy:ci
 workflows:
     version: 2
     build-deploy:
         jobs:
             - test-job
-            - deploy-job:
-                requires:
-                    - test-job
-                filters:
-                    branches:
-                        only: master
