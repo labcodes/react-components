@@ -1,6 +1,8 @@
 # React Components
 
-A collection of React components, ready to use!
+[![CircleCI](https://circleci.com/gh/labcodes/react-components/tree/master.svg?style=svg&circle-token=d06228bbf3f4f920216316bc2d667686163d15bf)](https://circleci.com/gh/labcodes/react-components/tree/master)
+
+> A collection of React components, ready to use!
 
 ## Getting Started
 
@@ -46,6 +48,14 @@ To deploy the project to github pages:
 
 ```sh
 $ npm run deploy
+```
+
+#### test
+
+To test all components and generate the Snapshot:
+
+```sh
+$ npm run test
 ```
 
 ## Built With
