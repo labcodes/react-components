@@ -1,5 +1,7 @@
 # React Components
 
+[![CircleCI](https://circleci.com/gh/labcodes/react-components/tree/master.svg?style=svg)](https://circleci.com/gh/labcodes/react-components/tree/master)
+
 > A collection of React components, ready to use!
 
 ## Getting Started
