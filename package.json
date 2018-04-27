@@ -15,7 +15,8 @@
     "test:watch": "./node_modules/.bin/jest --watch",
     "live": "./node_modules/.bin/http-server .components -o",
     "demo": "npm run build && npm run live",
-    "deploy": "npm run build && npm run storybook:gh"
+    "deploy": "npm run build && npm run storybook:gh",
+    "deploy:ci": "npm run build && npm run storybook:gh -- --ci --host-token-env-variable=54588cf396b0b59529dc9ce7da54cb6f6cbd54fe"
   },
   "author": "Thulio Philipe <thulio@labcodes.com.br>",
   "license": "MIT",
