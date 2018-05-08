@@ -1,0 +1,125 @@
+.modal-wrapper {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  position: absolute;
+
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: none;
+
+  justify-content: center;
+  overflow: hidden;
+  position: fixed;
+  z-index: 20;
+
+  &.js-active {
+    display: flex;
+  }
+}
+
+.modal-background {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: rgba(10,10,10,.86);
+}
+
+.modal {
+  border-radius: 5px;
+  display: flex;
+  max-height: calc(100vh - 40px);
+  flex-direction: column;
+  overflow: hidden;
+  margin: 0 20px;
+  position: relative;
+  width: 100%;
+  background-color: white;
+}
+
+.modal-header {
+  padding: 0;
+  justify-content: flex-end;
+  align-items: center;
+  display: flex;
+  flex-shrink: 0;
+  position: relative;
+  margin: 10px;
+}
+
+.modal-close {
+  font-size: 1rem;
+  height: 25px;
+  outline: none;
+  position: relative;
+  vertical-align: top;
+  width: 25px;
+  user-select: none;
+  background-color: rgba(10, 10, 10, 0.2);
+  border-radius: 100%;
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  border: 1px solid transparent;
+
+  transition: all .15s linear 0s;
+
+  &:hover {
+    background-color: white;
+    color: black;
+    border-color: rgba(10, 10, 10, 0.2);
+  }
+}
+
+.modal-body {
+  flex-shrink: 1;
+  overflow: auto;
+  padding: 20px;
+  flex-grow: 1;
+  display: block;
+  background-color: #EEEEEE;
+}
+
+.modal-actions {
+  display: flex;
+  margin: 10px;
+  justify-content: flex-end;
+}
+
+.btn-default {
+  margin-left: 10px;
+  outline: none;
+  -webkit-appearance: none;
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  box-shadow: none;
+  display: inline-flex;
+  height: 2.25em;
+  position: relative;
+  vertical-align: top;
+  cursor: pointer;
+  justify-content: center;
+  padding-left: .75em;
+  padding-right: .75em;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 1;
+  padding-bottom: .4em;
+  padding-top: .35em;
+  border-color: #f05b55;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #f05b55;
+
+  &.inverted {
+    color: #f05b55;
+    background-color: white;
+  }
+}

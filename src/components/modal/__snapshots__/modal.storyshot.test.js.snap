@@ -1,0 +1,365 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Modal active with content 1`] = `
+<aside
+  className="modal-wrapper js-active"
+>
+  <div
+    className="modal-background js-active"
+  />
+  <div
+    className="modal"
+  >
+    <header
+      className="modal-header"
+    >
+      <button
+        className="modal-close"
+        onClick={undefined}
+        title="Click to Close"
+      >
+        x
+      </button>
+    </header>
+    <section
+      className="modal-body"
+    >
+      <div
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "Here is my modal content!",
+          }
+        }
+      />
+    </section>
+    <footer
+      className="modal-actions"
+    >
+      <button
+        className="btn-default inverted"
+        onClick={undefined}
+      >
+        Cancel
+      </button>
+      <button
+        className="btn-default"
+        onClick={undefined}
+      >
+        Submit
+      </button>
+    </footer>
+  </div>
+</aside>
+`;
+
+exports[`Storyshots Modal active with handleCancel 1`] = `
+<aside
+  className="modal-wrapper js-active"
+>
+  <div
+    className="modal-background js-active"
+  />
+  <div
+    className="modal"
+  >
+    <header
+      className="modal-header"
+    >
+      <button
+        className="modal-close"
+        onClick={undefined}
+        title="Click to Close"
+      >
+        x
+      </button>
+    </header>
+    <section
+      className="modal-body"
+    >
+      <div
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "",
+          }
+        }
+      />
+    </section>
+    <footer
+      className="modal-actions"
+    >
+      <button
+        className="btn-default inverted"
+        onClick={[Function]}
+      >
+        Cancel
+      </button>
+      <button
+        className="btn-default"
+        onClick={undefined}
+      >
+        Submit
+      </button>
+    </footer>
+  </div>
+</aside>
+`;
+
+exports[`Storyshots Modal active with handleClose 1`] = `
+<aside
+  className="modal-wrapper js-active"
+>
+  <div
+    className="modal-background js-active"
+  />
+  <div
+    className="modal"
+  >
+    <header
+      className="modal-header"
+    >
+      <button
+        className="modal-close"
+        onClick={[Function]}
+        title="Click to Close"
+      >
+        x
+      </button>
+    </header>
+    <section
+      className="modal-body"
+    >
+      <div
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "",
+          }
+        }
+      />
+    </section>
+    <footer
+      className="modal-actions"
+    >
+      <button
+        className="btn-default inverted"
+        onClick={undefined}
+      >
+        Cancel
+      </button>
+      <button
+        className="btn-default"
+        onClick={undefined}
+      >
+        Submit
+      </button>
+    </footer>
+  </div>
+</aside>
+`;
+
+exports[`Storyshots Modal active with handleSubmit 1`] = `
+<aside
+  className="modal-wrapper js-active"
+>
+  <div
+    className="modal-background js-active"
+  />
+  <div
+    className="modal"
+  >
+    <header
+      className="modal-header"
+    >
+      <button
+        className="modal-close"
+        onClick={undefined}
+        title="Click to Close"
+      >
+        x
+      </button>
+    </header>
+    <section
+      className="modal-body"
+    >
+      <div
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "",
+          }
+        }
+      />
+    </section>
+    <footer
+      className="modal-actions"
+    >
+      <button
+        className="btn-default inverted"
+        onClick={undefined}
+      >
+        Cancel
+      </button>
+      <button
+        className="btn-default"
+        onClick={[Function]}
+      >
+        Submit
+      </button>
+    </footer>
+  </div>
+</aside>
+`;
+
+exports[`Storyshots Modal complete version 1`] = `
+<aside
+  className="modal-wrapper js-active"
+>
+  <div
+    className="modal-background js-active"
+  />
+  <div
+    className="modal"
+  >
+    <header
+      className="modal-header"
+    >
+      <button
+        className="modal-close"
+        onClick={[Function]}
+        title="Click to Close"
+      >
+        x
+      </button>
+    </header>
+    <section
+      className="modal-body"
+    >
+      <div
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "Here is my modal content!",
+          }
+        }
+      />
+    </section>
+    <footer
+      className="modal-actions"
+    >
+      <button
+        className="btn-default inverted"
+        onClick={[Function]}
+      >
+        Cancel
+      </button>
+      <button
+        className="btn-default"
+        onClick={[Function]}
+      >
+        Submit
+      </button>
+    </footer>
+  </div>
+</aside>
+`;
+
+exports[`Storyshots Modal empty 1`] = `
+<aside
+  className="modal-wrapper"
+>
+  <div
+    className="modal-background"
+  />
+  <div
+    className="modal"
+  >
+    <header
+      className="modal-header"
+    >
+      <button
+        className="modal-close"
+        onClick={undefined}
+        title="Click to Close"
+      >
+        x
+      </button>
+    </header>
+    <section
+      className="modal-body"
+    >
+      <div
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "",
+          }
+        }
+      />
+    </section>
+    <footer
+      className="modal-actions"
+    >
+      <button
+        className="btn-default inverted"
+        onClick={undefined}
+      >
+        Cancel
+      </button>
+      <button
+        className="btn-default"
+        onClick={undefined}
+      >
+        Submit
+      </button>
+    </footer>
+  </div>
+</aside>
+`;
+
+exports[`Storyshots Modal with isActive 1`] = `
+<aside
+  className="modal-wrapper js-active"
+>
+  <div
+    className="modal-background js-active"
+  />
+  <div
+    className="modal"
+  >
+    <header
+      className="modal-header"
+    >
+      <button
+        className="modal-close"
+        onClick={undefined}
+        title="Click to Close"
+      >
+        x
+      </button>
+    </header>
+    <section
+      className="modal-body"
+    >
+      <div
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "",
+          }
+        }
+      />
+    </section>
+    <footer
+      className="modal-actions"
+    >
+      <button
+        className="btn-default inverted"
+        onClick={undefined}
+      >
+        Cancel
+      </button>
+      <button
+        className="btn-default"
+        onClick={undefined}
+      >
+        Submit
+      </button>
+    </footer>
+  </div>
+</aside>
+`;
