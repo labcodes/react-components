@@ -4,6 +4,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { WithNotes } from '@storybook/addon-notes';
+import { withInfo } from '@storybook/addon-info';
 
 import Modal from './index';
 
@@ -22,7 +23,7 @@ storiesOf('Modal', module)
   .add('empty', () => (
     <Modal />
   ))
-  .add('with isActive', () => (
+  .add('with active', () => (
     <Modal active />
   ))
   .add('active with handleClose', () => (
@@ -37,7 +38,7 @@ storiesOf('Modal', module)
   .add('active with content', () => (
     <Modal active content={ModalObj.content} />
   ))
-  .add('complete version', () => (
+  .add('complete version', withInfo()(() =>
     <Modal
       active
       handleClose={ModalObj.handleClose}
