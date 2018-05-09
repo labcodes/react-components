@@ -1,5 +1,6 @@
 import { configure, setAddon } from '@storybook/react';
 import infoAddon, { setDefaults } from '@storybook/addon-info';
+import { setOptions } from '@storybook/addon-options';
 
 // ====
 
@@ -30,3 +31,16 @@ setDefaults({
 // ====
 
 setAddon(infoAddon);
+
+// ====
+
+setOptions({
+    name: 'Lab Components',
+    url: '#',
+    goFullScreen: false,
+    showLeftPanel: true,
+    showDownPanel: true,
+    showSearchBox: false,
+    downPanelInRight: true,
+    sortStoriesByKind: true
+});
