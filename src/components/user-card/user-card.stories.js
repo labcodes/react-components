@@ -4,6 +4,8 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { WithNotes } from '@storybook/addon-notes';
+import { withInfo } from '@storybook/addon-info';
+import { withKnobs, text, array, select } from '@storybook/addon-knobs/react';
 
 import UserCard from './index';
 
@@ -12,46 +14,27 @@ import UserCard from './index';
 const userObj = {
     userName: 'Chuck Norris',
     photoUrl: 'http://i.pravatar.cc/300',
-    amount: 'R$ 2.400,10'
+    amount: 'R$ 2.400,10',
+    status: ['pending', 'success']
 };
 
-storiesOf('UserCard', module)
-    .add('empty', () => (
-        <UserCard />
-    ))
-    .add('with username', () => (
-        <UserCard userName={userObj.userName} />
-    ))
-    .add('with photoUrl', () => (
-        <UserCard photoUrl={userObj.photoUrl} />
-    ))
-    .add('with amount', () => (
-        <UserCard amount={userObj.amount} />
-    ))
-    .add('with status pending', () => (
-        <UserCard status='pending' />
-    ))
-    .add('with status success', () => (
-        <UserCard status='success' />
-    ))
-    .add('complete version', () => (
-        <WithNotes notes={'It is the final version, with all the properties.'}>
-            <UserCard 
-                userName={userObj.userName}
-                photoUrl={userObj.photoUrl}
-                amount={userObj.amount}
-                status='pending'
-            />
-        </WithNotes>
-    ))
-    .add('complete version with handleClick', () => (
-        <WithNotes notes={'It has a handleClick props, to get some information about the clicked card.'}>
-            <UserCard 
-                userName={userObj.userName}
-                photoUrl={userObj.photoUrl}
-                amount={userObj.amount}
-                status='pending'
-                handleClick={(user) => action('It works!')(user)}
-            />
-        </WithNotes>
-    ))
+const componentNotes = 'It has a handleClick props, to get some information about the clicked card.';
+
+// ====
+
+const stories = storiesOf('UserCard', module);
+stories.addDecorator(withKnobs);
+
+// ====
+
+stories.add('complete version', withInfo()(() =>
+    <WithNotes notes={componentNotes}>
+        <UserCard
+            userName={text('User Name', userObj.userName)}
+            photoUrl={text('User photo', userObj.photoUrl)}
+            amount={text('Amount', userObj.amount)}
+            status={select('Status', [...userObj.status], userObj.status[0])}
+            handleClick={(user) => action('It works!')(user)}
+        />
+    </WithNotes>
+));
