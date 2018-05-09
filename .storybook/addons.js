@@ -11,3 +11,6 @@ import '@storybook/addon-notes/register';
 
 // options
 import '@storybook/addon-options/register';
+
+// knobs
+import '@storybook/addon-knobs/register'
