@@ -65,6 +65,8 @@ $ npm run test
 * [React](https://reactjs.org/) - Used to build the components
 * [Jest](https://facebook.github.io/jest/) - Used to test
 * [HTTP-Server](https://www.npmjs.com/package/http-server) - Used to start a HTTP server
+* [Lodash](https://lodash.com/) - Used as an utility
+* [Styled Components](https://www.styled-components.com) - Used to work with CSS in JS
 
 ## Contributors
 
