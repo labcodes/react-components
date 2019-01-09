@@ -11,7 +11,7 @@ stories.addDecorator(withKnobs);
 stories.add('complete version', () => (
   <NewModal
     isActive={boolean('isActive', true)}
-    showInput={boolean('showInput', true)}
+    showInput={boolean('showInput', false)}
     modalTitle={text('modalTitle', 'Criar evento')}
     saveLabel={text('saveLabel', 'Salvar')}
     removeLabel={text('removeLabel', 'Remover evento')}
