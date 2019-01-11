@@ -35,16 +35,14 @@ const ModalContent = styled.div`
   padding: 20px 24px;
   justify-content: center;
   flex-flow: column;
-
-  height: calc(100vh - 200px);
-  background-color: pink;
+  height: calc(100vh - 210px);
 `;
 
 const ModalFooter = styled.footer`
   display: flex;
   flex-flow: column;
   align-items: center;
-  padding: 20px 24px;
+  padding: 16px 24px;
 `;
 
 const SearchBox = styled.input.attrs({
@@ -73,6 +71,7 @@ const ButtonBase = styled.button`
   appearance: none;
   cursor: pointer;
   padding: 0;
+  background-color: transparent;
 `;
 
 const CloseButton = styled(ButtonBase)`
@@ -90,6 +89,22 @@ const SaveButton = styled(ButtonBase)`
   font-size: 14px;
   border-radius: 5px;
   font-weight: 600;
+
+  transition: opacity .25s linear 0s;
+
+  &:hover {
+    opacity: .7;
+  }
+`;
+
+const RemoveButton = styled(ButtonBase)`
+  color: #F05B55;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 12px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
 
   transition: opacity .25s linear 0s;
 
@@ -129,7 +144,7 @@ const NewModal = ({
 
       <ModalFooter>
         {removeLabel &&
-          <button onClick={handleRemove}>{removeLabel}</button>
+          <RemoveButton onClick={handleRemove}>{removeLabel}</RemoveButton>
         }
       </ModalFooter>
     </Wrapper>
