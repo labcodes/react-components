@@ -228,6 +228,7 @@ exports[`Storyshots Modal complete version 1`] = `
                       <span
                         style={Object {}}
                       >
+                        "
                         <span
                           style={
                             Object {
@@ -236,10 +237,9 @@ exports[`Storyshots Modal complete version 1`] = `
                             }
                           }
                         >
-                          "
                           Here is my modal content!
-                          "
                         </span>
+                        "
                       </span>
                     </span>
                   </span>
@@ -258,19 +258,17 @@ exports[`Storyshots Modal complete version 1`] = `
                       <span
                         style={Object {}}
                       >
-                        <span>
-                          {
-                          <span
-                            style={
-                              Object {
-                                "color": "#170",
-                              }
+                        {
+                        <span
+                          style={
+                            Object {
+                              "color": "#170",
                             }
-                          >
-                            handleClose()
-                          </span>
                           }
+                        >
+                          handleClose
                         </span>
+                        }
                       </span>
                     </span>
                   </span>
@@ -289,19 +287,17 @@ exports[`Storyshots Modal complete version 1`] = `
                       <span
                         style={Object {}}
                       >
-                        <span>
-                          {
-                          <span
-                            style={
-                              Object {
-                                "color": "#170",
-                              }
+                        {
+                        <span
+                          style={
+                            Object {
+                              "color": "#170",
                             }
-                          >
-                            handleSubmit()
-                          </span>
                           }
+                        >
+                          handleSubmit
                         </span>
+                        }
                       </span>
                     </span>
                   </span>
@@ -320,19 +316,17 @@ exports[`Storyshots Modal complete version 1`] = `
                       <span
                         style={Object {}}
                       >
-                        <span>
-                          {
-                          <span
-                            style={
-                              Object {
-                                "color": "#170",
-                              }
+                        {
+                        <span
+                          style={
+                            Object {
+                              "color": "#170",
                             }
-                          >
-                            handleCancel()
-                          </span>
                           }
+                        >
+                          handleCancel
                         </span>
+                        }
                       </span>
                     </span>
                     <br />
@@ -350,7 +344,7 @@ exports[`Storyshots Modal complete version 1`] = `
               </div>
             </div>
             <button
-              className="css-gydez8"
+              className="css-py33tc"
               onClick={[Function]}
             >
               <div
@@ -532,9 +526,7 @@ exports[`Storyshots Modal complete version 1`] = `
                         }
                       }
                     >
-                      "
                       
-                      "
                     </span>
                   </td>
                   <td
@@ -560,18 +552,14 @@ exports[`Storyshots Modal complete version 1`] = `
                   <td
                     className="css-d52hbj"
                   >
-                    <span>
-                      {
-                      <span
-                        style={
-                          Object {
-                            "color": "#a11",
-                          }
+                    <span
+                      style={
+                        Object {
+                          "color": "#a11",
                         }
-                      >
-                        false
-                      </span>
                       }
+                    >
+                      false
                     </span>
                   </td>
                   <td
