@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import truncate from 'lodash/truncate';
 
-const Wrapper = styled.section`
-  border: 1px solid #123456;
+import { CloseIcon, BackIcon } from '../icons';
 
+const Wrapper = styled.section`
   transition: all .25s ease-in-out 0s;
 
   transform: translateY(${props => props.show ? `0px` : `-1000px`});
@@ -35,6 +35,9 @@ const ModalContent = styled.div`
   padding: 20px 24px;
   justify-content: center;
   flex-flow: column;
+
+  height: calc(100vh - 200px);
+  background-color: pink;
 `;
 
 const ModalFooter = styled.footer`
@@ -56,19 +59,56 @@ const SearchBox = styled.input.attrs({
   outline: none;
   margin: 0;
   padding: 0;
+
+  caret-color: #00A7AC;
+
+  &::placeholder {
+    color: #CCC;
+  }
+`;
+
+const ButtonBase = styled.button`
+  outline: none;
+  border: none;
+  appearance: none;
+  cursor: pointer;
+  padding: 0;
+`;
+
+const CloseButton = styled(ButtonBase)`
+  width: auto;
+  height: 16px;
+`;
+
+const BackButton = styled(CloseButton)`
+`;
+
+const SaveButton = styled(ButtonBase)`
+  background-color: ${props => props.inverted ? `#FFFFFF` : `#00A7AC`};
+  color: ${props => props.inverted ? `#00A7AC` : `#FFFFFF`};
+  padding: 12px;
+  font-size: 14px;
+  border-radius: 5px;
+  font-weight: 600;
+
+  transition: opacity .25s linear 0s;
+
+  &:hover {
+    opacity: .7;
+  }
 `;
 
 const NewModal = ({
   handleClose, modalTitle, handleSave, saveLabel,
   children, handleRemove, removeLabel, isActive,
-  showInput, handleInputChange, handleBack,
+  showInput, handleInputChange, handleBack
 }) => {
   return (
     <Wrapper show={isActive}>
       <ModalHeader>
         <div>
-          {!showInput && <button onClick={handleClose}>x</button>}
-          {showInput && <button onClick={handleBack}>{'<-'}</button>}
+          {!showInput && <CloseButton onClick={handleClose}><CloseIcon /></CloseButton>}
+          {showInput && <BackButton onClick={handleBack}><BackIcon /></BackButton>}
         </div>
 
         <div>
@@ -77,7 +117,9 @@ const NewModal = ({
         </div>
 
         <div>
-          <button onClick={handleSave}>{saveLabel}</button>
+          <SaveButton onClick={handleSave} inverted={false}>
+            {saveLabel}
+          </SaveButton>
         </div>
       </ModalHeader>
 
