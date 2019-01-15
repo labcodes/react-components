@@ -6,21 +6,35 @@ import { CloseIcon } from '../icons';
 
 
 const Wrapper = styled.div`
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    min-width: 350px;
 `;
 
-const Base = styled.div`
+const UserImage = styled.div`
     flex: 1 1 30%;
-`;
-
-const UserImage = styled(Base)`
     text-align: left;
 `;
 
-const UserName = styled(Base)`
+const UserPhoto = styled.figure`
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    overflow: hidden;
+
+    img {
+        max-width: 100%;
+    }
+`;
+
+const UserName = styled.div`
+    flex: 1 1 30%;
     text-align: center;
 `;
 
-const SelectButton = styled(Base)`
+const SelectButton = styled.div`
+    flex: 1 1 30%;
     text-align: right;
 `;
 
@@ -35,15 +49,13 @@ const SelectUser = ({
     return (
      <Wrapper onClick={handleClick}>
         <UserImage>
-            <figure className='user-photo'>
+            <UserPhoto>
                 <img src={photoUrl} alt={userName} />
-            </figure>
+            </UserPhoto>
         </UserImage>
-
         <UserName>
             {userName}
         </UserName>
-
         <SelectButton>
             {isSelected ? <CloseIcon /> : <PlusIcon />}
         </SelectButton>
