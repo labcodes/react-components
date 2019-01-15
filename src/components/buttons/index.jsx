@@ -8,6 +8,9 @@ const ButtonBase = styled.button`
   cursor: pointer;
   padding: 0;
   background-color: transparent;
+  font-weight: 600;
+  padding: 12px;
+  font-size: 14px;
 `;
 
 const CloseButton = styled(ButtonBase)`
@@ -21,10 +24,7 @@ const BackButton = styled(CloseButton)`
 const SaveButton = styled(ButtonBase)`
   background-color: ${props => props.inverted ? `#FFFFFF` : `#00A7AC`};
   color: ${props => props.inverted ? `#00A7AC` : `#FFFFFF`};
-  padding: 12px;
-  font-size: 14px;
   border-radius: 5px;
-  font-weight: 600;
 
   transition: opacity .25s linear 0s;
 
@@ -35,13 +35,6 @@ const SaveButton = styled(ButtonBase)`
 
 const RemoveButton = styled(ButtonBase)`
   color: #F05B55;
-  font-weight: 600;
-  font-size: 14px;
-  padding: 12px;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-
   transition: opacity .25s linear 0s;
 
   &:hover {
