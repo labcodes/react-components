@@ -12,8 +12,10 @@ const Wrapper = styled.div`
     min-width: 350px;
 `;
 
-const UserImage = styled.div`
+const Base = styled.div`
     flex: 1 1 30%;
+`
+const UserImage = styled(Base)`
     text-align: left;
 `;
 
@@ -28,19 +30,17 @@ const UserPhoto = styled.figure`
     }
 `;
 
-const UserName = styled.div`
-    flex: 1 1 30%;
+const UserName = styled(Base)`
     text-align: center;
 `;
 
-const SelectButton = styled.div`
-    flex: 1 1 30%;
+const SelectButton = styled(Base)`
     text-align: right;
 `;
 
-const PlusIcon = styled(CloseIcon)`
-    transform: rotate(45deg);
+const PlustIcon = styled(CloseIcon)`
     fill: #00a7ac;
+    transform: rotate(45deg);
 `;
 
 const SelectUser = ({
@@ -57,7 +57,7 @@ const SelectUser = ({
             {userName}
         </UserName>
         <SelectButton>
-            {isSelected ? <CloseIcon /> : <PlusIcon />}
+            {isSelected ? <CloseIcon /> : <PlustIcon />}
         </SelectButton>
      </Wrapper>
     )
