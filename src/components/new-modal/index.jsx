@@ -44,6 +44,12 @@ const ModalFooter = styled.footer`
   flex-flow: column;
   align-items: center;
   padding: 16px 24px;
+
+  ${RemoveButton} {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
 `;
 
 const SearchBox = styled.input.attrs({
