@@ -63,7 +63,7 @@ const SearchBox = styled.input.attrs({
   border: none;
   outline: none;
   margin: 0;
-  padding: 0;
+  padding: 12px;
 
   caret-color: #00A7AC;
 
