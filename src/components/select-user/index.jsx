@@ -8,39 +8,49 @@ import { CloseIcon } from '../icons';
 const Wrapper = styled.div`
     display: flex;
     align-items: center;
-    padding: 10px;
     min-width: 350px;
+    margin-bottom: 16px;
 `;
 
-const Base = styled.div`
-    flex: 1 1 30%;
-`
-const UserImage = styled(Base)`
+const UserImage = styled.div`
+    flex: 0;
     text-align: left;
 `;
 
 const UserPhoto = styled.figure`
-    width: 35px;
-    height: 35px;
+    width: 32px;
+    height: 32px;
     border-radius: 100%;
     overflow: hidden;
+    margin: 0;
 
     img {
         max-width: 100%;
     }
 `;
 
-const UserName = styled(Base)`
-    text-align: center;
+const UserName = styled.div`
+    flex: 1 1 30%;
+    padding-top: 7px;
+    padding-left: 16px;
+    padding-bottom: 6px;
+    text-align: left;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -0.3px;
+    color: #4a4a4a;
 `;
 
-const SelectButton = styled(Base)`
+const SelectButton = styled.div`
+    flex: 0;
     text-align: right;
-`;
-
-const PlustIcon = styled(CloseIcon)`
-    fill: #00a7ac;
-    transform: rotate(45deg);
+    margin: 0;
+    padding-top: 8px;
+    padding-right: 8px;
 `;
 
 const SelectUser = ({
@@ -57,7 +67,7 @@ const SelectUser = ({
             {userName}
         </UserName>
         <SelectButton>
-            {isSelected ? <CloseIcon /> : <PlustIcon />}
+            {isSelected ? <CloseIcon scale="0.5" strokeWidth="1px" /> : <CloseIcon fill="#00a7ac" rotate="45deg" scale="0.4" strokeWidth="1px" />}
         </SelectButton>
      </Wrapper>
     )

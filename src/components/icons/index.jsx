@@ -1,20 +1,31 @@
 import React from 'react';
+import styled from 'styled-components';
 
-const SvgWrapper = ({ children }) => (
-  <svg
+const Svg = styled.svg`
+  transform: rotate(${props => props.rotate ? props.rotate : 0}) scale(${props => props.scale ? props.scale : 1});
+`;
+
+const Path = styled.path`
+  stroke: ${props => props.fill ? props.fill : "black"};
+  stroke-width: ${props => props.strokeWidth ? props.strokeWidth : "0px"};
+`;
+
+const SvgWrapper = (props) => (
+  <Svg
     width="24"
     height="24"
     xmlns="http://www.w3.org/2000/svg"
     fillRule="evenodd"
     clipRule="evenodd"
+    {...props}
   >
-    {children}
-  </svg>
+    {props.children}
+  </Svg>
 );
 
-export const CloseIcon = () => (
-  <SvgWrapper>
-    <path d="M12 11.293l10.293-10.293.707.707-10.293 10.293 10.293 10.293-.707.707-10.293-10.293-10.293 10.293-.707-.707 10.293-10.293-10.293-10.293.707-.707 10.293 10.293z"/>
+export const CloseIcon = (props) => (
+  <SvgWrapper {...props}>
+    <Path d="M12 11.293l10.293-10.293.707.707-10.293 10.293 10.293 10.293-.707.707-10.293-10.293-10.293 10.293-.707-.707 10.293-10.293-10.293-10.293.707-.707 10.293 10.293z" {...props}/>
   </SvgWrapper>
 );
 
