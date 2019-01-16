@@ -15,7 +15,6 @@ const ButtonBase = styled.button`
 
 const CloseButton = styled(ButtonBase)`
   width: auto;
-  height: 16px;
 `;
 
 const BackButton = styled(CloseButton)`
