@@ -206,6 +206,7 @@ exports[`Storyshots UserCard complete version 1`] = `
                         <span
                           style={Object {}}
                         >
+                          "
                           <span
                             style={
                               Object {
@@ -214,10 +215,9 @@ exports[`Storyshots UserCard complete version 1`] = `
                               }
                             }
                           >
-                            "
                             It has a handleClick props, to get some informatio…
-                            "
                           </span>
+                          "
                         </span>
                       </span>
                       
@@ -267,6 +267,7 @@ exports[`Storyshots UserCard complete version 1`] = `
                         <span
                           style={Object {}}
                         >
+                          "
                           <span
                             style={
                               Object {
@@ -275,10 +276,9 @@ exports[`Storyshots UserCard complete version 1`] = `
                               }
                             }
                           >
-                            "
                             Chuck Norris
-                            "
                           </span>
+                          "
                         </span>
                       </span>
                     </span>
@@ -297,6 +297,7 @@ exports[`Storyshots UserCard complete version 1`] = `
                         <span
                           style={Object {}}
                         >
+                          "
                           <span
                             style={
                               Object {
@@ -305,10 +306,9 @@ exports[`Storyshots UserCard complete version 1`] = `
                               }
                             }
                           >
-                            "
                             http://i.pravatar.cc/300
-                            "
                           </span>
+                          "
                         </span>
                       </span>
                     </span>
@@ -327,6 +327,7 @@ exports[`Storyshots UserCard complete version 1`] = `
                         <span
                           style={Object {}}
                         >
+                          "
                           <span
                             style={
                               Object {
@@ -335,10 +336,9 @@ exports[`Storyshots UserCard complete version 1`] = `
                               }
                             }
                           >
-                            "
                             R$ 2.400,10
-                            "
                           </span>
+                          "
                         </span>
                       </span>
                     </span>
@@ -357,6 +357,7 @@ exports[`Storyshots UserCard complete version 1`] = `
                         <span
                           style={Object {}}
                         >
+                          "
                           <span
                             style={
                               Object {
@@ -365,10 +366,9 @@ exports[`Storyshots UserCard complete version 1`] = `
                               }
                             }
                           >
-                            "
                             pending
-                            "
                           </span>
+                          "
                         </span>
                       </span>
                     </span>
@@ -387,19 +387,17 @@ exports[`Storyshots UserCard complete version 1`] = `
                         <span
                           style={Object {}}
                         >
-                          <span>
-                            {
-                            <span
-                              style={
-                                Object {
-                                  "color": "#170",
-                                }
+                          {
+                          <span
+                            style={
+                              Object {
+                                "color": "#170",
                               }
-                            >
-                              handleClick()
-                            </span>
                             }
+                          >
+                            handleClick
                           </span>
+                          }
                         </span>
                       </span>
                       <br />
@@ -438,7 +436,7 @@ exports[`Storyshots UserCard complete version 1`] = `
               </div>
             </div>
             <button
-              className="css-gydez8"
+              className="css-py33tc"
               onClick={[Function]}
             >
               <div
@@ -545,9 +543,7 @@ exports[`Storyshots UserCard complete version 1`] = `
                         }
                       }
                     >
-                      "
                       
-                      "
                     </span>
                   </td>
                   <td
@@ -581,9 +577,7 @@ exports[`Storyshots UserCard complete version 1`] = `
                         }
                       }
                     >
-                      "
                       
-                      "
                     </span>
                   </td>
                   <td
@@ -617,9 +611,7 @@ exports[`Storyshots UserCard complete version 1`] = `
                         }
                       }
                     >
-                      "
                       
-                      "
                     </span>
                   </td>
                   <td
@@ -653,9 +645,7 @@ exports[`Storyshots UserCard complete version 1`] = `
                         }
                       }
                     >
-                      "
                       
-                      "
                     </span>
                   </td>
                   <td
@@ -681,18 +671,14 @@ exports[`Storyshots UserCard complete version 1`] = `
                   <td
                     className="css-d52hbj"
                   >
-                    <span>
-                      {
-                      <span
-                        style={
-                          Object {
-                            "color": "#170",
-                          }
+                    <span
+                      style={
+                        Object {
+                          "color": "#170",
                         }
-                      >
-                        handleClick()
-                      </span>
                       }
+                    >
+                      handleClick
                     </span>
                   </td>
                   <td
@@ -766,18 +752,14 @@ exports[`Storyshots UserCard complete version 1`] = `
                   <td
                     className="css-d52hbj"
                   >
-                    <span>
-                      {
-                      <span
-                        style={
-                          Object {
-                            "color": "#777",
-                          }
+                    <span
+                      style={
+                        Object {
+                          "color": "#777",
                         }
-                      >
-                        null
-                      </span>
                       }
+                    >
+                      null
                     </span>
                   </td>
                   <td
@@ -811,9 +793,7 @@ exports[`Storyshots UserCard complete version 1`] = `
                         }
                       }
                     >
-                      "
                       
-                      "
                     </span>
                   </td>
                   <td
