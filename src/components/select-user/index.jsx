@@ -80,7 +80,7 @@ const SelectUser = ({
   SelectUser.defaultProps = {
     isSelected: false,
     handleClick: null,
-    userId: '0',
+    userId: '',
     userName: '',
     photoUrl: ''
   };
