@@ -31,16 +31,10 @@ const UserPhoto = styled.figure`
 
 const UserName = styled.div`
     flex: 1 1 30%;
-    padding-top: 7px;
-    padding-left: 16px;
-    padding-bottom: 6px;
+    padding: 6px 16px;
     text-align: left;
     font-family: Roboto;
     font-size: 16px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
     letter-spacing: -0.3px;
     color: #4a4a4a;
 `;
@@ -48,9 +42,8 @@ const UserName = styled.div`
 const SelectButton = styled.div`
     flex: 0;
     text-align: right;
-    margin: 0;
-    padding-top: 8px;
-    padding-right: 8px;
+    margin-top: 6px;
+    padding: 8px;
 `;
 
 const SelectUser = ({
@@ -67,12 +60,15 @@ const SelectUser = ({
             {userName}
         </UserName>
         <SelectButton>
-            {isSelected ? <CloseIcon scale="0.5" strokeWidth="1px" /> : <CloseIcon fill="#00a7ac" rotate="45deg" scale="0.4" strokeWidth="1px" />}
+            {isSelected
+              ? <CloseIcon scale="0.5" strokeWidth="1px" />
+              : <CloseIcon fill="#00a7ac" rotate="45deg" scale="0.4" strokeWidth="1px" />
+            }
         </SelectButton>
      </Wrapper>
     )
   };
-  
+
   SelectUser.propTypes = {
     isSelected: PropTypes.bool,
     handleClick: PropTypes.func,
@@ -80,7 +76,7 @@ const SelectUser = ({
     userName: PropTypes.string,
     photoUrl: PropTypes.string,
   };
-  
+
   SelectUser.defaultProps = {
     isSelected: false,
     handleClick: null,
@@ -88,5 +84,5 @@ const SelectUser = ({
     userName: '',
     photoUrl: ''
   };
-  
+
   export default SelectUser;
