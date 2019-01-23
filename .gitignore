@@ -6,6 +6,7 @@ node_modules/
 
 # Build folder
 .components/
+dist/
 
 # CSS Files
 src/**/*.css

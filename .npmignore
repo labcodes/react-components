@@ -1,0 +1,15 @@
+# folders
+.circle
+.github
+.storybook
+src
+tests
+__snapshots__
+
+# files
+.babelrc
+.gitignore
+jest.config.js
+webpack.config.js
+*.stories.js
+*-lock.json
