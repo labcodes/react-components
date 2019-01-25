@@ -1,8 +1,14 @@
 {
   "name": "@labcodes/new-modal",
   "version": "1.0.0",
-  "main": "index.jsx",
-  "dependencies": {
+  "main": "dist/index.jsx",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack-dev-server --mode development",
+    "build": "webpack --mode production",
+    "transpile": "babel src -d dist"
+  },
+  "devDependencies": {
     "react": "^16.7.0",
     "prop-types": "^15.6.2",
     "styled-components": "^4.1.3",

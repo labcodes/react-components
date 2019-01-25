@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { withKnobs, boolean, text } from '@storybook/addon-knobs/react';
 
-import NewModal from './index';
+import NewModal from './src/index';
 
 const stories = storiesOf('New Modal', module);
 stories.addDecorator(withKnobs);
