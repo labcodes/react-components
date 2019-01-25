@@ -1,0 +1,1 @@
+export const icons = () => console.warn('Hello from [icons]');
