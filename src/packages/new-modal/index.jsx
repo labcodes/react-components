@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import truncate from 'lodash/truncate';
 
-import { CloseButton, BackButton, SaveButton, RemoveButton } from '../buttons';
-import { CloseIcon, BackIcon } from '../icons';
+import { CloseButton, BackButton, SaveButton, RemoveButton } from '@labcodes/buttons';
+import { CloseIcon, BackIcon } from '@labcodes/icons';
 
 const Wrapper = styled.section`
   transition: all .25s ease-in-out 0s;
