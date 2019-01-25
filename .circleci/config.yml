@@ -8,7 +8,7 @@ defaults: &startContainer
 
 defaults: &npmInstall
     name: Installing all dependencies
-    command: npm install
+    command: yarn install
 
 version: 2
 jobs:
@@ -27,7 +27,7 @@ jobs:
                     - node_modules
             - run:
                 name: Running the tests
-                command: npm run test
+                command: yarn test
 workflows:
     version: 2
     build-deploy:
