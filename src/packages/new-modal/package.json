@@ -1,7 +1,7 @@
 {
   "name": "@labcodes/new-modal",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.jsx",
   "dependencies": {
     "react": "^16.7.0",
     "prop-types": "^15.6.2",
