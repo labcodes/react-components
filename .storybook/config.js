@@ -4,7 +4,7 @@ import { setOptions } from '@storybook/addon-options';
 
 // ====
 
-const req = require.context('../src/components/', true, /\.stories\.js$/);
+const req = require.context('../src/packages/', true, /\.stories\.js$/);
 
 function loadStories() {
     req.keys().forEach((filename) => req(filename));
