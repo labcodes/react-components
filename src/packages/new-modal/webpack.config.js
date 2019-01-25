@@ -11,10 +11,11 @@ const baseConfig = require('../../../webpack.config.js');
 module.exports = {
   ...baseConfig,
 
-  entry: path.join(__dirname, 'examples/src/index.js'),
+  entry: path.join(__dirname, 'src/index.jsx'),
 
   output: {
-    path: path.join(__dirname, 'examples/dist', 'index.js'),
+    path: path.join(__dirname, 'dist'),
+    filename: 'index.js'
   },
 
   plugins: [htmlPlugin],
